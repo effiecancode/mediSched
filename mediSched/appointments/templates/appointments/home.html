@@ -1,0 +1,28 @@
+{% extends 'authentication/base.html' %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+<div class="d-flex flex-column min-vh-100">
+    <!-- Main content container -->
+    <div class="container mt-3 flex-grow-1 d-flex align-items-center justify-content-center">
+        <div class="text-center">
+            <h2 class="text fs-1 mb-4" style="font-family: 'montserrat'; font-weight: 700; color:#050505;">
+                "Skip the Wait - Fast and Easy Doctor Appointments with MediSched."
+            </h2>
+            <button type="submit" class="btn btn-success btn-block">Book appointment</button>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer mt-auto py-1">
+        <div class="container">
+            <div class="row text-center mt-2 text-dark" style="border-radius: 20px;">
+                <p class="mt-1 mb-1">
+                    <strong>mediSched&nbsp;<i class="fa-solid fa-copyright"></i></strong>&nbsp;{% now "Y" %}
+                </p>
+            </div>
+        </div>
+    </footer>
+</div>
+{% endblock content %}
+

@@ -27,7 +27,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -78,6 +77,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'mediSched.wsgi.application'
 
+ROOT_URLCONF = 'mediSched.urls'
 
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
