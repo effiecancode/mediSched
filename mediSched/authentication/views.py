@@ -11,7 +11,7 @@ def register(request):
             user.is_active = False
             user.save()
             messages.success(request, 'Account Created Successfully', extra_tags="success")
-            return redirect('authentication:login')
+            return redirect('login')
     else:
         form = RegisterForm()
     return render(request, 'authentication/register.html', {'form': form})
